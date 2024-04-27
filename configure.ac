@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.61])
-AC_INIT([librudp], [0.3], [sdk@freebox.fr])
+AC_INIT([librudp],[0.3],[sdk@freebox.fr])
 AC_CONFIG_MACRO_DIR([autotools])
 AC_CONFIG_AUX_DIR([autotools])
 
@@ -34,7 +34,7 @@ AM_CONDITIONAL(HAVE_MKDOC, test x$mkdoc != x)
 AC_C_INLINE
 AC_TYPE_UINT32_T
 
-AM_PROG_LIBTOOL
+LT_INIT
 
 # Checks for libraries.
 PKG_CHECK_MODULES(ELA, ela)
